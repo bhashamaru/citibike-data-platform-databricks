@@ -11,6 +11,12 @@ This project builds an end-to-end data engineering pipeline using Citi Bike trip
 * Storage: Delta Lake tables (Bronze, Silver, Gold)
 * Governance: Unity Catalog
 
+## Data Transformation Layers
+
+- **Bronze**: Raw ingested data from CitiBike API
+- **Silver**: Cleaned and enriched datasets (handled via SQL scripts in `/sql/silver`)
+- **Gold**: Aggregated datasets for analytics and reporting
+
 ## 🔄 Pipeline Design (Medallion Architecture)
 
 ### Bronze Layer
@@ -58,3 +64,9 @@ This project builds an end-to-end data engineering pipeline using Citi Bike trip
 ## 🚀 How to Run
 
 (To be added)
+
+## ✅ Current Progress
+- Implemented ingestion pipeline from public S3 dataset
+- Handled ZIP file extraction in-memory due to environment restrictions
+- Loaded data into Bronze Delta table
+
