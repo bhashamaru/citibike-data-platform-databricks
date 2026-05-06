@@ -49,6 +49,7 @@ This project builds an end-to-end data engineering pipeline using Citi Bike trip
 * Working with restricted storage (no DBFS root)
 * Managing schema inconsistencies across datasets
 * Designing incremental ingestion pipelines
+* Deriving KPIs with a business impact
 
 ## 📊 Future Improvements
 
@@ -69,4 +70,6 @@ This project builds an end-to-end data engineering pipeline using Citi Bike trip
 - Implemented ingestion pipeline from public S3 dataset
 - Handled ZIP file extraction in-memory due to environment restrictions
 - Loaded data into Bronze Delta table
-
+- Wrote silver transformations in sql - cleaned data and added derived columns
+- Gold aggregation for Bike Angels program in sql
+- Orchestrated the sql queries using Python notebook
